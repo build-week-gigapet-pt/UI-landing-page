@@ -1,3 +1,6 @@
+.baseBottomMargin {
+  margin-bottom: 20px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -157,7 +160,7 @@ body {
 }
 body {
   max-width: 880px;
-  background-color: #CCCCFF;
+  background-color: #CCEEFF;
   margin: auto;
 }
 h1,
@@ -176,21 +179,45 @@ a {
 button {
   font-size: 2rem;
 }
-header nav {
+header {
+  margin-bottom: 20px;
+}
+header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header div h1 {
+  margin-bottom: 20px;
+}
+header div nav {
+  width: 60%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
-header nav button {
-  padding: 5px 10px;
-  background-color: #CCEEFF;
+header div nav button {
+  padding: 7px 20px;
+  background-color: #CCCCFF;
+  color: black;
+  border-radius: 8px;
+}
+header div nav button:hover {
+  background-color: #C268FF;
   color: black;
 }
-header nav button:hover {
+header div nav button:active {
   background-color: #70E000;
   color: black;
 }
-header nav button:active {
-  background-color: #C268FF;
-  color: black;
+.about section {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+}
+.about section img {
+  align-self: center;
+  margin-bottom: 20px;
 }

@@ -189,8 +189,6 @@ body {
   font-family: 'Source Sans Pro';
 }
 body {
-  max-width: 880px;
-  background-color: #CCEEFF;
   margin: auto;
 }
 h1 {
@@ -259,4 +257,11 @@ header div nav button:active {
 .about section img {
   align-self: center;
   margin-bottom: 20px;
+}
+.about section .about-full-img {
+  height: 50vh;
+  width: 100%;
+  background-image: url(../img/no-scroll-kids.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }

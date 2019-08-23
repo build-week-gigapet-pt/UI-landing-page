@@ -1,3 +1,4 @@
+
 @import url("fontawesome-all.min.css");
 @font-face {
   font-family: 'Source Sans Pro';
@@ -32,6 +33,7 @@
 .baseBottomMargin {
   margin-bottom: 20px;
 }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,6 +162,30 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.container.home {
+  width: 80%;
+  margin: 0 auto;
+}
+.container.home header {
+  text-align: center;
+}
+.container.home header h1 {
+  font-size: 2.6rem;
+}
+.container.home header #banner {
+  height: 300px;
+  background-color: purple;
+}
+.container.home header #banner h1 {
+  font-size: 4rem;
+}
+.container.home main .row {
+  display: flex;
+  flex-direction: row;
+}
+.container.home main .row section {
+  flex-basis: 33%;
 button {
   border: none;
   margin: 0;

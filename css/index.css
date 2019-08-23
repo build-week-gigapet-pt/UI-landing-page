@@ -189,6 +189,8 @@ body {
   font-family: 'Source Sans Pro';
 }
 body {
+  margin: auto;
+  max-width: 100%;
   background-color: #CCEEFF;
 }
 h1 {
@@ -210,6 +212,12 @@ p {
 }
 a {
   font-size: 1.8rem;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 50;
+}
+div {
+  font-size: 1.5rem;
 }
 button {
   font-size: 1.8rem;
@@ -229,25 +237,72 @@ header div h1 {
   margin-bottom: 20px;
 }
 header div nav {
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
-header div nav button {
+header div nav a {
   padding: 7px 20px;
   background-color: #CCCCFF;
   color: black;
   border-radius: 8px;
 }
-header div nav button:hover {
+header div nav a:hover {
   background-color: #C268FF;
   color: black;
 }
-header div nav button:active {
+header div nav a:active {
   background-color: #70E000;
   color: black;
 }
+@media (max-width: 500px) {
+  header div nav {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  header div nav {
+    width: 80%;
+  }
+}
+footer {
+  padding-bottom: 20px;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  width: 100%;
+  background-color: #9D0AFF;
+  color: #CCEEFF;
+}
+footer nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+footer nav a {
+  padding: 0 20px;
+  color: #CCEEFF;
+}
+footer nav a:hover {
+  color: white;
+}
+footer nav a:active {
+  color: #70E000;
+}
+@media (max-width: 500px) {
+  footer {
+    padding-top: 30px;
+  }
+}
+.container.about {
+  width: 80%;
+  margin: 0 auto;
+}
+.container.about section {
 body {
   background-color: white;
 }
@@ -327,7 +382,9 @@ body {
   flex-direction: column;
   justify-content: baseline;
 }
-.about section img {
+.container.about section img {
+  width: 125%;
+  max-height: 300px;
   align-self: center;
   margin-bottom: 20px;
 }

@@ -1,3 +1,4 @@
+
 header {
     .baseBottomMargin();
     div {
@@ -7,12 +8,19 @@ header {
             .baseBottomMargin();
         }
         nav {
-            width: 60%;
-            .setFlex(row, space-between);
-            button {
+            width: 50%;
+            .setFlex(row, space-evenly);
+            a {
                 .styleButton(@button-bg, @font-color, @pop-color1, @font-color, @pop-color2, @font-color);
             }
+            @media @mobile {
+                width: 100%;
+            }
+            @media @tablet {
+                width: 80%;
+            }
         }
+        
     }
     
     

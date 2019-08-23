@@ -292,6 +292,11 @@ footer nav a:hover {
 footer nav a:active {
   color: #70E000;
 }
+@media (max-width: 500px) {
+  footer {
+    padding-top: 30px;
+  }
+}
 .container.about {
   width: 80%;
   margin: 0 auto;

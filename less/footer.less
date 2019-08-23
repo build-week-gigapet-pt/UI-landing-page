@@ -1,5 +1,23 @@
 footer {
+  padding-bottom: 20px;
+  padding-top: 80px;
+  .setFlex(column, baseline);
+  align-items: center;
   width: 100%;
   background-color: @violet;
   color: @diamond;
+  nav {
+    .setFlex(row, space-between);
+    margin-bottom: 10px;
+    a {
+      padding: 0 20px;
+      color: @diamond;
+      &:hover {
+        color:white;
+      }
+      &:active {
+        color: @pop-color2;
+      }
+    }
+  }
 }

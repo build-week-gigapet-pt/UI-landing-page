@@ -266,11 +266,34 @@ header div nav a:active {
   }
 }
 footer {
+  padding-bottom: 20px;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
   width: 100%;
   background-color: #9D0AFF;
   color: #CCEEFF;
 }
+footer nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+footer nav a {
+  padding: 0 20px;
+  color: #CCEEFF;
+}
+footer nav a:hover {
+  color: white;
+}
+footer nav a:active {
+  color: #70E000;
+}
 .container.about {
+  width: 80%;
   margin: 0 auto;
 }
 .container.about section {
@@ -280,9 +303,8 @@ footer {
   justify-content: baseline;
 }
 .container.about section img {
+  width: 125%;
+  max-height: 300px;
   align-self: center;
   margin-bottom: 20px;
-}
-.container.about section .about-full-img {
-  width: 100%;
 }

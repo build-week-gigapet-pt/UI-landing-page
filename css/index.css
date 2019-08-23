@@ -1,4 +1,3 @@
-
 @import url("fontawesome-all.min.css");
 @font-face {
   font-family: 'Source Sans Pro';
@@ -33,7 +32,6 @@
 .baseBottomMargin {
   margin-bottom: 20px;
 }
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -162,30 +160,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-.container.home {
-  width: 80%;
-  margin: 0 auto;
-}
-.container.home header {
-  text-align: center;
-}
-.container.home header h1 {
-  font-size: 2.6rem;
-}
-.container.home header #banner {
-  height: 300px;
-  background-color: purple;
-}
-.container.home header #banner h1 {
-  font-size: 4rem;
-}
-.container.home main .row {
-  display: flex;
-  flex-direction: row;
-}
-.container.home main .row section {
-  flex-basis: 33%;
 button {
   border: none;
   margin: 0;
@@ -215,9 +189,7 @@ body {
   font-family: 'Source Sans Pro';
 }
 body {
-  max-width: 880px;
   background-color: #CCEEFF;
-  margin: auto;
 }
 h1 {
   font-size: 3rem;
@@ -274,6 +246,79 @@ header div nav button:hover {
 }
 header div nav button:active {
   background-color: #70E000;
+  color: black;
+}
+body {
+  background-color: white;
+}
+.home {
+  width: 80%;
+  background-color: #CCEEFF;
+  margin: 0 auto;
+}
+.home #banner {
+  height: 300px;
+  background-color: #C268FF;
+  padding: 120px 0;
+  text-align: center;
+}
+.home #banner h1 {
+  font-size: 4rem;
+}
+.home main .row {
+  max-width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.home main .row section {
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.home main .row section img {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+}
+.home main #buttons {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.home main #buttons .button {
+  text-align: center;
+  width: 150px;
+  margin: 0 auto;
+  padding: 7px 20px;
+  background-color: #CCCCFF;
+  color: black;
+  border-radius: 8px;
+}
+.home main #buttons .button:hover {
+  background-color: #C268FF;
+  color: black;
+}
+.home main #buttons .button:active {
+  background-color: #70E000;
+  color: black;
+}
+.home main #buttons .login {
+  padding: 7px 20px;
+  background-color: #70E000;
+  color: black;
+  border-radius: 8px;
+}
+.home main #buttons .login:hover {
+  background-color: #C268FF;
+  color: black;
+}
+.home main #buttons .login:active {
+  background-color: #CCCCFF;
   color: black;
 }
 .about section {

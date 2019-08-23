@@ -1,3 +1,34 @@
+@import url("fontawesome-all.min.css");
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Source Sans Pro Light Italic'), local('SourceSansPro-LightItalic'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkids18E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdr.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdr.ttf) format('truetype');
+}
 .baseBottomMargin {
   margin-bottom: 20px;
 }
@@ -156,28 +187,36 @@ html {
 html,
 body {
   font-family: 'Source Sans Pro';
-  font-weight: 300;
 }
 body {
   max-width: 880px;
   background-color: #CCEEFF;
   margin: auto;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-size: 2rem;
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+h2 {
+  font-size: 2.7rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+h4 {
+  font-size: 2.2rem;
 }
 p {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 a {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 button {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-weight: 50;
+  font-style: italic;
 }
 header {
   margin-bottom: 20px;

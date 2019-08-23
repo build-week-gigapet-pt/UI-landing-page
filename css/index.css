@@ -191,6 +191,7 @@ body {
 body {
   margin: auto;
   max-width: 100%;
+  background-color: #CCEEFF;
 }
 h1 {
   font-size: 3rem;
@@ -302,6 +303,80 @@ footer nav a:active {
   margin: 0 auto;
 }
 .container.about section {
+body {
+  background-color: white;
+}
+.home {
+  width: 80%;
+  background-color: #CCEEFF;
+  margin: 0 auto;
+}
+.home #banner {
+  height: 300px;
+  background-color: #C268FF;
+  padding: 120px 0;
+  text-align: center;
+}
+.home #banner h1 {
+  font-size: 4rem;
+}
+.home main .row {
+  max-width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.home main .row section {
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.home main .row section img {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+}
+.home main #buttons {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.home main #buttons .button {
+  text-align: center;
+  width: 150px;
+  margin: 0 auto;
+  padding: 7px 20px;
+  background-color: #CCCCFF;
+  color: black;
+  border-radius: 8px;
+}
+.home main #buttons .button:hover {
+  background-color: #C268FF;
+  color: black;
+}
+.home main #buttons .button:active {
+  background-color: #70E000;
+  color: black;
+}
+.home main #buttons .login {
+  padding: 7px 20px;
+  background-color: #70E000;
+  color: black;
+  border-radius: 8px;
+}
+.home main #buttons .login:hover {
+  background-color: #C268FF;
+  color: black;
+}
+.home main #buttons .login:active {
+  background-color: #CCCCFF;
+  color: black;
+}
+.about section {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;

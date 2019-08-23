@@ -1,0 +1,19 @@
+ 
+.styleButton(@bg-col, @text-col,@hover-col, @hover-text-col,@active-col,@active-text-col){
+    padding: 5px 10px;
+    background-color: @bg-col;
+    color: @text-col;
+    &:hover {
+        background-color: @hover-col;
+        color: @hover-text-col;
+    }
+    &:active {
+        background-color:@active-col;
+        color: @active-text-col;
+    }
+}
+
+.setFlex(@direction) {
+    display: flex;
+    flex-direction: @direction;
+}

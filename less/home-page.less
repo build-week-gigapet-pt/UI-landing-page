@@ -1,25 +1,47 @@
-.container.home {
+body {
+	background-color: white;
+}
+.home {
 	width: 80%;
-	margin: 0 auto;
-	header {
+	background-color: @main-bg;
+	#banner {
+		height: 300px;
+		background-color: @heliotrope;
+		padding: 120px 0;
 		text-align: center;
 		h1 {
-			font-size: 2.6rem;
-		}
-		#banner {
-			height: 300px;
-			background-color: purple;
-			h1 {
-				font-size: 4rem;
-			}
+			font-size: 4rem;
 		}
 	}
+	margin: 0 auto;
 	main {
 		.row {
-			.setFlex(row);
+			max-width: 90%;
+			margin: 20px auto;
+			.setFlex(row, space-evenly);
 			section {
 				flex-basis: 33%;
+				.setFlex(column, flex-start);
+				img {
+					width: 50%;
+					height: 50%;
+					margin: 0 auto;
+				}
 			}
-		}		
+		}
+		#buttons{
+			max-width: 400px;
+			margin: 0 auto;
+			.setFlex(row, center);
+			.button {
+				text-align: center;
+				width: 150px;
+				margin: 0 auto;
+				.styleButton(@periwinkle, @font-color, @pop-color1, @font-color, @pop-color2, @font-color);
+			}	
+			.login {
+				.styleButton(@pop-color2, @font-color, @pop-color1, @font-color, @periwinkle, @font-color);
+			}
+		}
 	}
 }

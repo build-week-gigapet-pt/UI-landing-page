@@ -256,14 +256,14 @@ header div nav a:active {
   background-color: #70E000;
   color: black;
 }
-@media (max-width: 500px) {
-  header div nav {
-    width: 100%;
-  }
-}
 @media (max-width: 800px) {
   header div nav {
     width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  header div nav {
+    width: 100%;
   }
 }
 footer {
@@ -293,18 +293,15 @@ footer nav a:hover {
 footer nav a:active {
   color: #70E000;
 }
+@media (max-width: 800px) {
+  footer {
+    padding-top: 50px;
+  }
+}
 @media (max-width: 500px) {
   footer {
     padding-top: 30px;
   }
-}
-.container.about {
-  width: 80%;
-  margin: 0 auto;
-}
-.container.about section {
-body {
-  background-color: white;
 }
 .home {
   width: 80%;
@@ -376,13 +373,17 @@ body {
   background-color: #CCCCFF;
   color: black;
 }
-.about section {
+.container.about {
+  width: 80%;
+  margin: 0 auto;
+}
+.container.about .top-section {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: baseline;
 }
-.container.about section img {
+.container.about .top-section img {
   width: 125%;
   max-height: 300px;
   align-self: center;

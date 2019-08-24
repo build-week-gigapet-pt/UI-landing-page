@@ -1,0 +1,78 @@
+
+.container.about{
+    width: 80%;
+    margin: 0 auto;
+    .top-section {
+        .baseBottomMargin();
+        .setFlex(column, baseline);
+        img {
+            width: 125%;
+            max-height: 300px;
+            align-self: center;
+            .baseBottomMargin();
+        }
+    }
+    .member-info {
+        .baseBottomMargin;
+        h2 {
+            .baseBottomMargin;
+            @media @mobile {
+                text-align: center;
+            }
+        }
+        .members {
+            
+            .setFlex(row, space-between);
+            flex-wrap: wrap;
+            @media @mobile {
+                .setFlex(column, center);
+                align-items: center;
+            }
+            .member {
+                .baseBottomMargin;
+                text-align: center;
+                position: relative;
+                &:hover {
+                    .thumbnails{
+                        opacity: .3;
+                    }
+                    .middle{
+                        opacity: .9;
+                    }
+                }
+                &:active {
+                    .middle {
+                        .text {
+                            background-color: @pop-color1;
+                        }
+                    }
+                }
+                .thumbnails {
+                    border-radius: 8px;
+                    opacity: 1;
+                    transition: .5s ease;
+                    backface-visibility: hidden;
+                    @media (max-width:250px) {
+                        width: 100%;
+                    }
+                }
+                .middle {
+                    transition: .5s ease;
+                    opacity: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    text-align: center;
+                    .text {
+                        background-color: @button-bg;
+                        color: black;
+                        padding: 32px 32px;
+                        border-radius: 8px;
+                      }
+                  }
+            }
+        }
+    }
+} 

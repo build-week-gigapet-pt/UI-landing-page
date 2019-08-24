@@ -244,18 +244,27 @@ header div nav {
   justify-content: space-evenly;
 }
 header div nav a {
-  padding: 7px 20px;
-  background-color: #CCCCFF;
+  padding: 10px 25px;
+  background-color: #bde9ff;
   color: black;
   border-radius: 8px;
 }
 header div nav a:hover {
-  background-color: #C268FF;
+  background-color: #99ddff;
   color: black;
 }
 header div nav a:active {
-  background-color: #70E000;
+  background-color: #C268FF;
   color: black;
+}
+header div nav .current {
+  background-color: #70E000;
+}
+header div nav .current:hover {
+  background-color: #63c700;
+}
+header div nav .current:active {
+  background-color: #C268FF;
 }
 @media (max-width: 800px) {
   header div nav {
@@ -347,7 +356,7 @@ footer nav a:active {
   text-align: center;
   width: 150px;
   margin: 0 auto;
-  padding: 7px 20px;
+  padding: 10px 25px;
   background-color: #CCCCFF;
   color: black;
   border-radius: 8px;
@@ -361,7 +370,7 @@ footer nav a:active {
   color: black;
 }
 .home main #buttons .login {
-  padding: 7px 20px;
+  padding: 10px 25px;
   background-color: #70E000;
   color: black;
   border-radius: 8px;

@@ -200,6 +200,7 @@ h1 {
 }
 h2 {
   font-size: 2.7rem;
+  font-weight: 600;
 }
 h3 {
   font-size: 2.4rem;
@@ -388,4 +389,70 @@ footer nav a:active {
   max-height: 300px;
   align-self: center;
   margin-bottom: 20px;
+}
+.container.about .member-info {
+  margin-bottom: 20px;
+}
+.container.about .member-info h2 {
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .container.about .member-info h2 {
+    text-align: center;
+  }
+}
+.container.about .member-info .members {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .container.about .member-info .members {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.container.about .member-info .members .member {
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+.container.about .member-info .members .member:hover .thumbnails {
+  opacity: 0.3;
+}
+.container.about .member-info .members .member:hover .middle {
+  opacity: 0.9;
+}
+.container.about .member-info .members .member:active .middle .text {
+  background-color: #C268FF;
+}
+.container.about .member-info .members .member .thumbnails {
+  border-radius: 8px;
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+@media (max-width: 250px) {
+  .container.about .member-info .members .member .thumbnails {
+    width: 100%;
+  }
+}
+.container.about .member-info .members .member .middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container.about .member-info .members .member .middle .text {
+  background-color: #CCCCFF;
+  color: black;
+  padding: 32px 32px;
+  border-radius: 8px;
 }

@@ -28,7 +28,13 @@ header {
                 .setFlex(column, flex-start);
                 text-align: center;
             }   
-        }   
+        }
+        @media @tablet {
+            .setFlex(row-reverse, space-evenly);
+            h1 {
+                margin-top: 20px;
+            }
+        } 
     }
     @media @mobile {
         margin-bottom: 20px;

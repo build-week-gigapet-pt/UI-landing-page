@@ -245,23 +245,25 @@ header div nav {
 }
 header div nav a {
   padding: 10px 25px;
-  background-color: #d1f0ff;
+  background-color: #CCCCFF;
   color: black;
   border-radius: 8px;
 }
 header div nav a:hover {
-  background-color: #ade4ff;
+  background-color: #C268FF;
   color: black;
 }
 header div nav a:active {
-  background-color: #C268FF;
+  background-color: #70E000;
   color: black;
 }
 @media (max-width: 500px) {
   header div nav a {
-    width: 100%;
-    border-radius: 0;
-    text-align: center;
+    border-radius: 0px;
+    border-top: solid 1px #aeaee1;
+  }
+  header div nav a:last-child {
+    border-bottom: solid 1px #aeaee1;
   }
 }
 header div nav .current {
@@ -280,10 +282,11 @@ header div nav .current:active {
 }
 @media (max-width: 500px) {
   header div nav {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
+    justify-content: flex-start;
+    text-align: center;
   }
 }
 footer {
@@ -323,6 +326,9 @@ footer nav a:active {
     padding-top: 30px;
   }
 }
+body {
+  background-color: white;
+}
 .home {
   width: 80%;
   background-color: #e0f5ff;
@@ -337,15 +343,24 @@ footer nav a:active {
 .home #banner h1 {
   font-size: 4rem;
 }
+@media (max-width: 500px) {
+  .home #banner {
+    height: 200px;
+    padding: 82px 0;
+  }
+}
+.home main {
+  margin: 30px auto;
+}
 .home main .row {
   max-width: 90%;
-  margin: 20px auto;
+  margin: 40px auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .home main .row section {
-  flex-basis: 33%;
+  flex-basis: 30%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -354,6 +369,16 @@ footer nav a:active {
   width: 50%;
   height: 50%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .home main .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .home main .row section {
+    margin: 15px auto;
+  }
 }
 .home main #buttons {
   max-width: 400px;
@@ -392,6 +417,22 @@ footer nav a:active {
 .home main #buttons .login:active {
   background-color: #CCCCFF;
   color: black;
+}
+@media (max-width: 500px) {
+  .home main #buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .home main #buttons .button {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    width: 100%;
+  }
 }
 .container.about {
   width: 80%;
@@ -439,27 +480,27 @@ footer nav a:active {
   text-align: center;
   position: relative;
 }
-.container.about .member-info .members .member:hover .thumbnails {
+.container.about .member-info .members .member a:hover .thumbnails {
   opacity: 0.3;
 }
-.container.about .member-info .members .member:hover .middle {
+.container.about .member-info .members .member a:hover .middle {
   opacity: 0.9;
 }
-.container.about .member-info .members .member:active .middle .text {
+.container.about .member-info .members .member a:active .middle .text {
   background-color: #C268FF;
 }
-.container.about .member-info .members .member .thumbnails {
+.container.about .member-info .members .member a .thumbnails {
   border-radius: 8px;
   opacity: 1;
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
 @media (max-width: 250px) {
-  .container.about .member-info .members .member .thumbnails {
+  .container.about .member-info .members .member a .thumbnails {
     width: 100%;
   }
 }
-.container.about .member-info .members .member .middle {
+.container.about .member-info .members .member a .middle {
   transition: 0.5s ease;
   opacity: 0;
   position: absolute;
@@ -469,7 +510,7 @@ footer nav a:active {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-.container.about .member-info .members .member .middle .text {
+.container.about .member-info .members .member a .middle .text {
   background-color: #CCCCFF;
   color: black;
   padding: 32px 32px;

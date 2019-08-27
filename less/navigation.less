@@ -11,12 +11,13 @@ header {
             width: 50%;
             .setFlex(row, space-evenly);
             a {
-                .styleButton(darken(@main-bg, 3%), @font-color, darken(@main-bg, 10%), @font-color, @pop-color1, @font-color);
+                .styleButton(@button-bg, @font-color, @pop-color1, @font-color, @pop-color2, @font-color);
                 @media @mobile {
-                    width: 100%;
-                    border-radius: 0;
-                    text-align:center;
-                }
+                    border-radius: 0px;
+                    border-top: solid 1px (@button-bg - 30);
+                    &:last-child {
+                        border-bottom: solid 1px (@button-bg - 30);
+                    }
             }
             .current{
                 background-color: @pop-color2;
@@ -33,7 +34,12 @@ header {
             @media @mobile {
                 .setFlex(column,center);
                 width: 100%;
+                .setFlex(column, flex-start);
+                text-align: center;
             }   
         }   
+    }
+    @media @mobile {
+        margin-bottom: 20px;
     }
 }

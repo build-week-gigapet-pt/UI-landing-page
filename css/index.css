@@ -191,7 +191,7 @@ body {
 body {
   margin: auto;
   max-width: 100%;
-  background-color: #CCEEFF;
+  background-color: #e0f5ff;
 }
 h1 {
   font-size: 3rem;
@@ -244,17 +244,17 @@ header div nav {
   justify-content: space-evenly;
 }
 header div nav a {
-  padding: 7px 20px;
-  background-color: #CCCCFF;
+  padding: 10px 25px;
+  background-color: #d1f0ff;
   color: black;
   border-radius: 8px;
 }
 header div nav a:hover {
-  background-color: #C268FF;
+  background-color: #ade4ff;
   color: black;
 }
 header div nav a:active {
-  background-color: #70E000;
+  background-color: #C268FF;
   color: black;
 }
 @media (max-width: 500px) {
@@ -266,6 +266,20 @@ header div nav a:active {
     border-bottom: solid 1px #aeaee1;
   }
 }
+    width: 100%;
+    border-radius: 0;
+    text-align: center;
+  }
+}
+header div nav .current {
+  background-color: #70E000;
+}
+header div nav .current:hover {
+  background-color: #63c700;
+}
+header div nav .current:active {
+  background-color: #C268FF;
+}
 @media (max-width: 800px) {
   header div nav {
     width: 80%;
@@ -273,6 +287,9 @@ header div nav a:active {
 }
 @media (max-width: 500px) {
   header div nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -327,7 +344,7 @@ body {
 }
 .home {
   width: 80%;
-  background-color: #CCEEFF;
+  background-color: #e0f5ff;
   margin: 0 auto;
 }
 .home #banner {
@@ -387,7 +404,7 @@ body {
   text-align: center;
   width: 150px;
   margin: 0 auto;
-  padding: 7px 20px;
+  padding: 10px 25px;
   background-color: #CCCCFF;
   color: black;
   border-radius: 8px;
@@ -401,7 +418,7 @@ body {
   color: black;
 }
 .home main #buttons .login {
-  padding: 7px 20px;
+  padding: 10px 25px;
   background-color: #70E000;
   color: black;
   border-radius: 8px;

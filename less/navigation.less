@@ -6,7 +6,7 @@ header {
         align-items: center;
         h1 {
             .baseBottomMargin();
-        } 
+        }
         nav {
             width: 50%;
             .setFlex(row, space-evenly);
@@ -18,26 +18,23 @@ header {
                     &:last-child {
                         border-bottom: solid 1px (@button-bg - 30);
                     }
-            }
-            .current{
-                background-color: @pop-color2;
-                &:hover {
-                    background-color: darken(@pop-color2, 5%);
-                }
-                &:active {
-                    background-color: @pop-color1;
                 }
             }
             @media @tablet {
                 width: 80%;
             }
             @media @mobile {
-                .setFlex(column,center);
                 width: 100%;
                 .setFlex(column, flex-start);
                 text-align: center;
             }   
-        }   
+        }
+        @media @tablet {
+            .setFlex(row-reverse, space-evenly);
+            h1 {
+                margin-top: 20px;
+            }
+        } 
     }
     @media @mobile {
         margin-bottom: 20px;

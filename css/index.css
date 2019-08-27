@@ -245,16 +245,16 @@ header div nav {
 }
 header div nav a {
   padding: 10px 25px;
-  background-color: #d1f0ff;
+  background-color: #CCCCFF;
   color: black;
   border-radius: 8px;
 }
 header div nav a:hover {
-  background-color: #ade4ff;
+  background-color: #C268FF;
   color: black;
 }
 header div nav a:active {
-  background-color: #C268FF;
+  background-color: #70E000;
   color: black;
 }
 @media (max-width: 500px) {
@@ -266,20 +266,6 @@ header div nav a:active {
     border-bottom: solid 1px #aeaee1;
   }
 }
-    width: 100%;
-    border-radius: 0;
-    text-align: center;
-  }
-}
-header div nav .current {
-  background-color: #70E000;
-}
-header div nav .current:hover {
-  background-color: #63c700;
-}
-header div nav .current:active {
-  background-color: #C268FF;
-}
 @media (max-width: 800px) {
   header div nav {
     width: 80%;
@@ -287,14 +273,21 @@ header div nav .current:active {
 }
 @media (max-width: 500px) {
   header div nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  header div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+  header div h1 {
+    margin-top: 20px;
   }
 }
 @media (max-width: 500px) {
@@ -342,37 +335,56 @@ footer nav a:active {
 body {
   background-color: white;
 }
-.home {
-  width: 80%;
-  background-color: #e0f5ff;
+header {
   margin: 0 auto;
 }
-.home #banner {
+header #banner {
   height: 300px;
   background-color: #C268FF;
+  margin-top: 20px;
   padding: 120px 0;
   text-align: center;
 }
-.home #banner h1 {
+header #banner h1 {
   font-size: 4rem;
 }
 @media (max-width: 500px) {
-  .home #banner {
+  header #banner {
     height: 200px;
-    padding: 82px 0;
+    padding: 51px 0;
   }
 }
+@media (max-width: 800px) {
+  header #banner {
+    display: block;
+    height: auto;
+    margin: 0;
+    padding: 30px 0;
+  }
+  header #banner h1 {
+    margin: 0 0 20px;
+  }
+}
+.home {
+  margin: 0 auto;
+}
 .home main {
-  margin: 30px auto;
+  margin: 0 auto;
+  padding: 30px 0;
 }
 .home main .row {
   max-width: 90%;
-  margin: 40px auto;
+  margin: 20px auto;
+  padding: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .home main .row section {
+  padding: 20px;
+  background-color: #e0f5ff;
+  box-shadow: 0px 0px 10px 4px gray;
+  border-radius: 5%;
   flex-basis: 30%;
   display: flex;
   flex-direction: column;
@@ -381,7 +393,13 @@ body {
 .home main .row section img {
   width: 50%;
   height: 50%;
-  margin: 0 auto;
+  margin: 10px auto;
+  border-radius: 5%;
+}
+@media (max-width: 800px) {
+  .home main .row {
+    max-width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .home main .row {
@@ -395,7 +413,7 @@ body {
 }
 .home main #buttons {
   max-width: 400px;
-  margin: 0 auto;
+  margin: 1px auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -440,6 +458,11 @@ body {
   .home main #buttons .button {
     width: 100%;
     border-radius: 0;
+  }
+}
+@media (max-width: 800px) {
+  .home main {
+    padding: 10px 0;
   }
 }
 @media (max-width: 500px) {

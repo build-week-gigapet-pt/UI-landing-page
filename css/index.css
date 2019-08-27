@@ -191,7 +191,7 @@ body {
 body {
   margin: auto;
   max-width: 100%;
-  background-color: #CCEEFF;
+  background-color: #e0f5ff;
 }
 h1 {
   font-size: 3rem;
@@ -245,12 +245,12 @@ header div nav {
 }
 header div nav a {
   padding: 10px 25px;
-  background-color: #bde9ff;
+  background-color: #d1f0ff;
   color: black;
   border-radius: 8px;
 }
 header div nav a:hover {
-  background-color: #99ddff;
+  background-color: #ade4ff;
   color: black;
 }
 header div nav a:active {
@@ -315,7 +315,7 @@ footer nav a:active {
 }
 .home {
   width: 80%;
-  background-color: #CCEEFF;
+  background-color: #e0f5ff;
   margin: 0 auto;
 }
 .home #banner {

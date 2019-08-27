@@ -191,7 +191,7 @@ body {
 body {
   margin: auto;
   max-width: 100%;
-  background-color: #CCEEFF;
+  background-color: #e0f5ff;
 }
 h1 {
   font-size: 3rem;
@@ -200,6 +200,7 @@ h1 {
 }
 h2 {
   font-size: 2.7rem;
+  font-weight: 600;
 }
 h3 {
   font-size: 2.4rem;
@@ -243,27 +244,46 @@ header div nav {
   justify-content: space-evenly;
 }
 header div nav a {
-  padding: 7px 20px;
-  background-color: #CCCCFF;
+  padding: 10px 25px;
+  background-color: #d1f0ff;
   color: black;
   border-radius: 8px;
 }
 header div nav a:hover {
-  background-color: #C268FF;
+  background-color: #ade4ff;
   color: black;
 }
 header div nav a:active {
-  background-color: #70E000;
+  background-color: #C268FF;
   color: black;
 }
 @media (max-width: 500px) {
-  header div nav {
+  header div nav a {
     width: 100%;
+    border-radius: 0;
+    text-align: center;
   }
+}
+header div nav .current {
+  background-color: #70E000;
+}
+header div nav .current:hover {
+  background-color: #63c700;
+}
+header div nav .current:active {
+  background-color: #C268FF;
 }
 @media (max-width: 800px) {
   header div nav {
     width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  header div nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
   }
 }
 footer {
@@ -293,22 +313,19 @@ footer nav a:hover {
 footer nav a:active {
   color: #70E000;
 }
+@media (max-width: 800px) {
+  footer {
+    padding-top: 50px;
+  }
+}
 @media (max-width: 500px) {
   footer {
     padding-top: 30px;
   }
 }
-.container.about {
-  width: 80%;
-  margin: 0 auto;
-}
-.container.about section {
-body {
-  background-color: white;
-}
 .home {
   width: 80%;
-  background-color: #CCEEFF;
+  background-color: #e0f5ff;
   margin: 0 auto;
 }
 .home #banner {
@@ -349,7 +366,7 @@ body {
   text-align: center;
   width: 150px;
   margin: 0 auto;
-  padding: 7px 20px;
+  padding: 10px 25px;
   background-color: #CCCCFF;
   color: black;
   border-radius: 8px;
@@ -363,7 +380,7 @@ body {
   color: black;
 }
 .home main #buttons .login {
-  padding: 7px 20px;
+  padding: 10px 25px;
   background-color: #70E000;
   color: black;
   border-radius: 8px;
@@ -376,15 +393,85 @@ body {
   background-color: #CCCCFF;
   color: black;
 }
-.about section {
+.container.about {
+  width: 80%;
+  margin: 0 auto;
+}
+.container.about .top-section {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: baseline;
 }
-.container.about section img {
+.container.about .top-section img {
   width: 125%;
   max-height: 300px;
   align-self: center;
   margin-bottom: 20px;
+}
+.container.about .member-info {
+  margin-bottom: 20px;
+}
+.container.about .member-info h2 {
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .container.about .member-info h2 {
+    text-align: center;
+  }
+}
+.container.about .member-info .members {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .container.about .member-info .members {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.container.about .member-info .members .member {
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+.container.about .member-info .members .member:hover .thumbnails {
+  opacity: 0.3;
+}
+.container.about .member-info .members .member:hover .middle {
+  opacity: 0.9;
+}
+.container.about .member-info .members .member:active .middle .text {
+  background-color: #C268FF;
+}
+.container.about .member-info .members .member .thumbnails {
+  border-radius: 8px;
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+@media (max-width: 250px) {
+  .container.about .member-info .members .member .thumbnails {
+    width: 100%;
+  }
+}
+.container.about .member-info .members .member .middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container.about .member-info .members .member .middle .text {
+  background-color: #CCCCFF;
+  color: black;
+  padding: 32px 32px;
+  border-radius: 8px;
 }

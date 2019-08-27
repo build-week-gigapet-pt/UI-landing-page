@@ -227,12 +227,16 @@ button {
 }
 header {
   margin-bottom: 20px;
+  padding-top: 20px;
 }
 header div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+header div h1 {
+  margin-bottom: 20px;
 }
 header div nav {
   width: 50%;

@@ -1,13 +1,20 @@
 
 header {
-    .baseBottomMargin();
+    .baseBottomMargin();  
+    padding-top: 20px;
+    @media @mobile {
+        margin: 0 auto;
+    }
     div {
         .setFlex(column, center);
         align-items: center;
-        h1 {
-            .baseBottomMargin();
-        } 
-        nav {
+        h1 { 
+            .baseBottomMargin;
+        }
+        .logo {
+            .baseBottomMargin;
+        }
+        nav { 
             width: 50%;
             .setFlex(row, space-evenly);
             a {
@@ -18,7 +25,9 @@ header {
                     &:last-child {
                         border-bottom: solid 1px (@button-bg - 30);
                     }
-            }
+                  }
+                } 
+            }  
             .current{
                 background-color: @pop-color2;
                 &:hover {
@@ -32,7 +41,6 @@ header {
                 width: 80%;
             }
             @media @mobile {
-                .setFlex(column,center);
                 width: 100%;
                 .setFlex(column, flex-start);
                 text-align: center;

@@ -273,6 +273,12 @@ header div nav a:active {
   }
   header div nav a:last-child {
     border-bottom: solid 1px #aeaee1;
+
+  }
+}
+    width: 100%;
+    border-radius: 0;
+    text-align: center;
   }
 }
 header div nav .current {
@@ -296,6 +302,11 @@ header div nav .current:active {
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    margin-bottom: 20px;
   }
 }
 footer {
@@ -334,6 +345,9 @@ footer nav a:active {
   footer {
     padding-top: 30px;
   }
+}
+body {
+  background-color: white;
 }
 .home {
   width: 80%;

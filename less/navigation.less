@@ -25,6 +25,7 @@ header {
                     &:last-child {
                         border-bottom: solid 1px (@button-bg - 30);
                     }
+
                   }
                 } 
             }  
@@ -45,9 +46,21 @@ header {
                 .setFlex(column, flex-start);
                 text-align: center;
             }   
-        }   
+        }
+        @media @tablet {
+            .setFlex(row-reverse, space-evenly);
+            h1 {
+                margin-top: 20px;
+            }
+        }
+        @media @mobile {
+            .setFlex(column, center);
+            h1 {
+                display: none;
+            }
+        }
     }
     @media @mobile {
-        margin-bottom: 20px;
+        margin: 0 auto;
     }
 }

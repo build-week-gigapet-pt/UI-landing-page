@@ -243,6 +243,9 @@ header div {
 header div h1 {
   margin-bottom: 20px;
 }
+header div .logo {
+  margin-bottom: 20px;
+}
 header div nav {
   width: 50%;
   display: flex;
@@ -459,6 +462,7 @@ footer nav a:active {
   }
 }
 .container.about .top-section img {
+  display: none;
   width: 125%;
   max-height: 350px;
   align-self: center;
@@ -468,6 +472,25 @@ footer nav a:active {
   .container.about .top-section img {
     width: 100%;
     margin: 0 auto;
+  }
+}
+.container.about .top-section h1 {
+  font-size: 4rem;
+  align-self: center;
+  width: 125%;
+  margin: 0;
+  padding: 100px 0px;
+  max-height: 250px;
+  background-color: #9D0AFF;
+  background-image: linear-gradient(#bb28ff, #7f00e1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .container.about .top-section h1 {
+    width: 100%;
+    max-height: 150px;
+    margin: 0;
   }
 }
 .container.about .top-section .top-text {
@@ -495,13 +518,13 @@ footer nav a:active {
   }
 }
 .container.about .member-info h2 {
+  text-align: center;
+  padding: 15px 0px;
   margin-bottom: 20px;
 }
 @media (max-width: 500px) {
   .container.about .member-info h2 {
-    text-align: center;
     margin: 0 auto;
-    padding: 15px 0px;
   }
 }
 .container.about .member-info .members {
@@ -510,12 +533,16 @@ footer nav a:active {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-@media (max-width: 500px) {
+@media (max-width: 675px) {
   .container.about .member-info .members {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .container.about .member-info .members {
     margin: 0 auto;
   }
 }

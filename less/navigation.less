@@ -26,9 +26,8 @@ header {
                         border-bottom: solid 1px (@button-bg - 30);
                     }
 
-                  }
-                } 
-            }  
+                }
+            } 
             .current{
                 background-color: @pop-color2;
                 &:hover {
@@ -46,7 +45,7 @@ header {
                 .setFlex(column, flex-start);
                 text-align: center;
             }   
-        }
+        }  
         @media @tablet {
             .setFlex(row-reverse, space-evenly);
             h1 {
@@ -59,8 +58,5 @@ header {
                 display: none;
             }
         }
-    }
-    @media @mobile {
-        margin: 0 auto;
     }
 }

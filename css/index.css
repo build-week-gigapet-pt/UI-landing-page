@@ -273,8 +273,16 @@ header div nav a:active {
   }
   header div nav a:last-child {
     border-bottom: solid 1px #aeaee1;
-
   }
+}
+header div nav .current {
+  background-color: #70E000;
+}
+header div nav .current:hover {
+  background-color: #63c700;
+}
+header div nav .current:active {
+  background-color: #C268FF;
 }
 @media (max-width: 800px) {
   header div nav {
@@ -308,11 +316,6 @@ header div nav a:active {
   }
   header div h1 {
     display: none;
-  }
-}
-@media (max-width: 500px) {
-  header {
-    margin: 0 auto;
   }
 }
 footer {

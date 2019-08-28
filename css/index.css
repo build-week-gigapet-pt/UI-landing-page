@@ -314,6 +314,7 @@ footer {
   align-items: center;
   width: 100%;
   background-color: #9D0AFF;
+  background-image: linear-gradient(#bb28ff, #7f00e1);
   color: #CCEEFF;
   border-top: solid 1px #7f00e1;
 }
@@ -355,11 +356,12 @@ header {
 .home #banner {
   height: 300px;
   background-color: #9D0AFF;
+  background-image: linear-gradient(#bb28ff, #7f00e1);
   margin-top: 20px;
   padding: 120px 0;
   text-align: center;
-  border-top: solid 1px #7f00e1;
-  border-bottom: solid 1px #7f00e1;
+  /*		border-top: solid 1px (@violet - 30);
+		border-bottom: solid 1px (@violet - 30);*/
 }
 .home #banner h1 {
   font-size: 4rem;

@@ -296,10 +296,13 @@ header div nav a:active {
     flex-direction: column;
     justify-content: center;
   }
+  header div h1 {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
   header {
-    margin-bottom: 20px;
+    margin: 0 auto;
   }
 }
 footer {
@@ -361,12 +364,6 @@ header {
 .home #banner h1 {
   font-size: 4rem;
 }
-@media (max-width: 500px) {
-  .home #banner {
-    height: 200px;
-    padding: 51px 0;
-  }
-}
 @media (max-width: 800px) {
   .home #banner {
     display: block;
@@ -376,6 +373,15 @@ header {
   }
   .home #banner h1 {
     margin: 0 0 20px;
+  }
+}
+@media (max-width: 500px) {
+  .home #banner {
+    height: 200px;
+    padding: 51px 0;
+  }
+  .home #banner h1 {
+    font-size: 3.2rem;
   }
 }
 .home main {
@@ -416,15 +422,20 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 0;
   }
   .home main .row section {
-    margin: 15px auto;
+    box-shadow: none;
+    border-radius: 0;
+    border-top: solid 1px #c2d7e1;
+    border-bottom: solid 1px #c2d7e1;
   }
 }
 .home main #buttons {
   max-width: 400px;
-  margin: 1px auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -469,7 +480,6 @@ header {
   .home main #buttons .button {
     width: 100%;
     border-radius: 0;
-    margin-bottom: 10px;
     border-top: solid 1px #aeaee1;
     border-bottom: solid 1px #aeaee1;
   }
@@ -481,6 +491,11 @@ header {
 @media (max-width: 800px) {
   .home main {
     padding: 10px 0;
+  }
+}
+@media (max-width: 500px) {
+  .home main {
+    padding: 0;
   }
 }
 @media (max-width: 500px) {

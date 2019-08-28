@@ -191,7 +191,7 @@ body {
 body {
   margin: auto;
   max-width: 100%;
-  background-color: #e0f5ff;
+  background-color: white;
 }
 h1 {
   font-size: 3rem;
@@ -227,6 +227,12 @@ button {
 }
 header {
   margin-bottom: 20px;
+  padding-top: 20px;
+}
+@media (max-width: 500px) {
+  header {
+    margin: 0 auto;
+  }
 }
 header div {
   display: flex;
@@ -235,6 +241,9 @@ header div {
   align-items: center;
 }
 header div h1 {
+  margin-bottom: 20px;
+}
+header div .logo {
   margin-bottom: 20px;
 }
 header div nav {
@@ -264,6 +273,7 @@ header div nav a:active {
   }
   header div nav a:last-child {
     border-bottom: solid 1px #aeaee1;
+
   }
 }
 @media (max-width: 800px) {
@@ -509,27 +519,87 @@ header {
   width: 80%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container.about {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .container.about .top-section {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: baseline;
 }
+@media (max-width: 500px) {
+  .container.about .top-section {
+    margin: 0 auto;
+  }
+}
 .container.about .top-section img {
+  display: none;
   width: 125%;
-  max-height: 300px;
+  max-height: 350px;
   align-self: center;
   margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .container.about .top-section img {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.container.about .top-section h1 {
+  font-size: 4rem;
+  align-self: center;
+  width: 125%;
+  margin: 0;
+  padding: 100px 0px;
+  max-height: 250px;
+  background-color: #9D0AFF;
+  background-image: linear-gradient(#bb28ff, #7f00e1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .container.about .top-section h1 {
+    width: 100%;
+    max-height: 150px;
+    margin: 0;
+  }
+}
+.container.about .top-section .top-text {
+  padding: 10px;
+  background-color: #d6ffad;
+  box-shadow: 0px 0px 10px 4px gray;
+  border-radius: 8px;
+}
+@media (max-width: 500px) {
+  .container.about .top-section .top-text {
+    box-shadow: 0px 0px;
+    border-radius: 0px;
+  }
+}
+.container.about .top-section .top-text p {
+  padding-bottom: 10px;
 }
 .container.about .member-info {
   margin-bottom: 20px;
 }
+@media (max-width: 500px) {
+  .container.about .member-info {
+    margin: 0 auto;
+    background-color: #c2d7e1;
+  }
+}
 .container.about .member-info h2 {
+  text-align: center;
+  padding: 15px 0px;
   margin-bottom: 20px;
 }
 @media (max-width: 500px) {
   .container.about .member-info h2 {
-    text-align: center;
+    margin: 0 auto;
   }
 }
 .container.about .member-info .members {
@@ -538,7 +608,7 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-@media (max-width: 500px) {
+@media (max-width: 675px) {
   .container.about .member-info .members {
     display: flex;
     flex-direction: column;
@@ -546,32 +616,53 @@ header {
     align-items: center;
   }
 }
+@media (max-width: 500px) {
+  .container.about .member-info .members {
+    margin: 0 auto;
+  }
+}
 .container.about .member-info .members .member {
+  background-color: #CCEEFF;
+  padding: 0px 10px 10px 10px;
+  box-shadow: 0px 0px 10px 4px gray;
+  border-radius: 8px;
   margin-bottom: 20px;
   text-align: center;
   position: relative;
 }
-.container.about .member-info .members .member:hover .thumbnails {
+@media (max-width: 500px) {
+  .container.about .member-info .members .member {
+    box-shadow: 0px 0px;
+    border-radius: 0;
+    width: 100%;
+    border-bottom: 1px solid #c2d7e1;
+    margin: 0 auto;
+  }
+  .container.about .member-info .members .member:first-child {
+    border-top: 1px solid #c2d7e1;
+  }
+}
+.container.about .member-info .members .member a:hover .thumbnails {
   opacity: 0.3;
 }
-.container.about .member-info .members .member:hover .middle {
+.container.about .member-info .members .member a:hover .middle {
   opacity: 0.9;
 }
-.container.about .member-info .members .member:active .middle .text {
+.container.about .member-info .members .member a:active .middle .text {
   background-color: #C268FF;
 }
-.container.about .member-info .members .member .thumbnails {
+.container.about .member-info .members .member a .thumbnails {
   border-radius: 8px;
   opacity: 1;
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
 @media (max-width: 250px) {
-  .container.about .member-info .members .member .thumbnails {
+  .container.about .member-info .members .member a .thumbnails {
     width: 100%;
   }
 }
-.container.about .member-info .members .member .middle {
+.container.about .member-info .members .member a .middle {
   transition: 0.5s ease;
   opacity: 0;
   position: absolute;
@@ -581,7 +672,7 @@ header {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-.container.about .member-info .members .member .middle .text {
+.container.about .member-info .members .member a .middle .text {
   background-color: #CCCCFF;
   color: black;
   padding: 32px 32px;

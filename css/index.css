@@ -461,6 +461,9 @@ header {
   border-radius: 15%;
   border: solid 5px #aed0e1;
 }
+.home main .row section p {
+  text-align: center;
+}
 @media (max-width: 800px) {
   .home main .row {
     max-width: 100%;
@@ -482,7 +485,7 @@ header {
     border-bottom: solid 1px #aed0e1;
   }
   .home main .row section img {
-    max-width: 70%;
+    max-width: 50%;
   }
 }
 .home main #buttons {

@@ -1,6 +1,6 @@
 
 header {
-    .baseBottomMargin();  
+    .baseBottomMargin;  
     padding-top: 20px;
     @media @mobile {
         margin: 0 auto;
@@ -15,6 +15,7 @@ header {
             .baseBottomMargin;
         }
         nav { 
+            .baseBottomMargin;  
             width: 50%;
             .setFlex(row, space-evenly);
             a {
@@ -44,6 +45,7 @@ header {
                 width: 100%;
                 .setFlex(column, flex-start);
                 text-align: center;
+                margin: 0 auto;
             }   
         }  
         @media @tablet {

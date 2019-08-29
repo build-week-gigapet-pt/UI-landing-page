@@ -6,7 +6,9 @@ footer {
   align-items: center;
   width: 100%;
   background-color: @violet;
+  background-image: linear-gradient((@violet + 30), (@violet - 30));
   color: @diamond;
+  border-top: solid 1px (@violet - 30);
   nav {
     .setFlex(row, space-between);
     margin-bottom: 10px;

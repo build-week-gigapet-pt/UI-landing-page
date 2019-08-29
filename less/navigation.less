@@ -1,13 +1,29 @@
 
 header {
-    .baseBottomMargin();
+    .baseBottomMargin;  
+    padding-top: 20px;
+    @media @mobile {
+        margin: 0 auto;
+    }
     div {
         .setFlex(column, center);
         align-items: center;
-        h1 {
-            .baseBottomMargin();
+        h1 { 
+            .baseBottomMargin;
         }
-        nav {
+        .logo {
+            .baseBottomMargin;
+            height: 60px;
+            @media @tablet {
+                height: 50px;
+                margin-right: 10px;
+            }
+            @media @mobile {
+                height: 45px;
+            }
+        }
+        nav { 
+            .baseBottomMargin;  
             width: 50%;
             .setFlex(row, space-evenly);
             a {
@@ -18,6 +34,16 @@ header {
                     &:last-child {
                         border-bottom: solid 1px (@button-bg - 30);
                     }
+
+                }
+            } 
+            .current{
+                background-color: @pop-color2;
+                &:hover {
+                    background-color: darken(@pop-color2, 5%);
+                }
+                &:active {
+                    background-color: @pop-color1;
                 }
             }
             @media @tablet {
@@ -27,10 +53,20 @@ header {
                 width: 100%;
                 .setFlex(column, flex-start);
                 text-align: center;
+                margin: 0 auto;
             }   
-        }   
-    }
-    @media @mobile {
-        margin-bottom: 20px;
+        }  
+        @media @tablet {
+            .setFlex(row-reverse, space-evenly);
+            .logo {
+                margin-top: 20px;
+            }
+        }
+        @media @mobile {
+            .setFlex(column, center);
+            h1 {
+                display: none;
+            }
+        }
     }
 }

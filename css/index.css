@@ -645,6 +645,11 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media (min-width: 1012px) {
+  .container.about .member-info .members {
+    flex-wrap: nowrap;
+  }
+}
 @media (max-width: 675px) {
   .container.about .member-info .members {
     display: flex;
@@ -666,6 +671,11 @@ header {
   margin-bottom: 20px;
   text-align: center;
   position: relative;
+}
+@media (min-width: 1012px) {
+  .container.about .member-info .members .member {
+    flex-basis: 24%;
+  }
 }
 @media (max-width: 675px) {
   .container.about .member-info .members .member {
@@ -695,6 +705,7 @@ header {
   background-color: #C268FF;
 }
 .container.about .member-info .members .member a .thumbnails {
+  max-width: 100%;
   margin-top: 10px;
   border-radius: 8px;
   opacity: 1;

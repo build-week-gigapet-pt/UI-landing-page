@@ -270,6 +270,18 @@ header div h1 {
 }
 header div .logo {
   margin-bottom: 20px;
+  height: 60px;
+}
+@media (max-width: 800px) {
+  header div .logo {
+    height: 50px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 500px) {
+  header div .logo {
+    height: 45px;
+  }
 }
 header div nav {
   margin-bottom: 20px;
@@ -580,18 +592,19 @@ header {
 @media (max-width: 800px) {
   .container.about .top-section .banner {
     max-height: 200px;
-    padding-bottom: 140px;
+    padding: 70px 0px 80px 0px;
   }
 }
 @media (max-width: 500px) {
   .container.about .top-section .banner {
+    padding: 40px 0px 70px 0px;
     max-height: 100px;
     width: 100%;
     margin: 0;
   }
 }
 .container.about .top-section .top-text {
-  padding: 10px;
+  padding: 20px 10px;
   background-color: #d6ffad;
   box-shadow: 0px 0px 10px 4px gray;
   border-radius: 8px;
@@ -645,15 +658,21 @@ header {
 }
 .container.about .member-info .members .member {
   background-color: #CCEEFF;
-  padding: 0px 10px 10px 10px;
+  padding: 10px;
   box-shadow: 0px 0px 10px 4px gray;
   border-radius: 8px;
   margin-bottom: 20px;
   text-align: center;
   position: relative;
 }
+@media (max-width: 675px) {
+  .container.about .member-info .members .member {
+    padding: 10px 60px;
+  }
+}
 @media (max-width: 500px) {
   .container.about .member-info .members .member {
+    padding: 10px;
     box-shadow: 0px 0px;
     border-radius: 0;
     width: 100%;
@@ -674,6 +693,7 @@ header {
   background-color: #C268FF;
 }
 .container.about .member-info .members .member a .thumbnails {
+  margin-top: 10px;
   border-radius: 8px;
   opacity: 1;
   transition: 0.5s ease;

@@ -8,28 +8,29 @@ html {
 
 html, body {
   font-family: 'Source Sans Pro';
-  // font-weight: 300;
-  // font-family: 'Font Awesome 5 Free';
 }
 
 body {
-
-  // max-width: 880px;
-  // background-color: @main-bg;
   margin: auto;
   max-width: 100%;
   background-color: white;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 600;
   letter-spacing: -1px;
+  @media @mobile {
+    font-size: 3.4rem;
+  }
 }
 
 h2 {
   font-size: 2.7rem;
   font-weight: 600;
+  @media @mobile {
+    font-size: 2.4rem
+  }
 }
 h3 {
   font-size: 2.4rem;
@@ -41,6 +42,9 @@ h4 {
 
 p { 
   font-size: 1.8rem;
+  @media @mobile {
+    font-size: 1.6rem;
+  }
 }
 
 a{
@@ -48,6 +52,9 @@ a{
   text-decoration: none;
   font-style: italic;
   font-weight: 50;
+  @media @mobile {
+    font-size: 1.6rem;
+  }
 }
 div {
   font-size: 1.5rem;
@@ -56,5 +63,8 @@ button {
   font-size: 1.8rem;
   font-weight: 50;
   font-style: italic;
+  @media @mobile {
+    font-size: 1.6rem;
+  }
 }
 

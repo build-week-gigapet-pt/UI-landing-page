@@ -25,9 +25,9 @@ header {
                     &:last-child {
                         border-bottom: solid 1px (@button-bg - 30);
                     }
-                  }
-                } 
-            }  
+
+                }
+            } 
             .current{
                 background-color: @pop-color2;
                 &:hover {
@@ -45,9 +45,18 @@ header {
                 .setFlex(column, flex-start);
                 text-align: center;
             }   
-        }   
-    }
-    @media @mobile {
-        margin-bottom: 20px;
+        }  
+        @media @tablet {
+            .setFlex(row-reverse, space-evenly);
+            h1 {
+                margin-top: 20px;
+            }
+        }
+        @media @mobile {
+            .setFlex(column, center);
+            h1 {
+                display: none;
+            }
+        }
     }
 }

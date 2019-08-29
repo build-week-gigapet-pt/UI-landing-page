@@ -14,8 +14,6 @@ header {
 		margin-top: 20px;
 		padding: 120px 0;
 		text-align: center;
-/*		border-top: solid 1px (@violet - 30);
-		border-bottom: solid 1px (@violet - 30);*/
 		h1 {
 			font-size: 4rem;
 		}
@@ -71,6 +69,10 @@ header {
 					border-radius: 0;
 					border-top: solid 1px (@main-bg - 30);
 					border-bottom: solid 1px (@main-bg - 30);
+					img {
+						border-radius: 15%;
+						border: solid 5px (@main-bg - 30);
+					}
 				}
 
 			}
@@ -89,6 +91,7 @@ header {
 				.styleButton(@pop-color2, @font-color, @pop-color1, @font-color, @periwinkle, @font-color);
 			}
 			@media @mobile {
+				max-width: 100%;
 				.setFlex(column, flex-start);
 				.button {
 					width: 100%;

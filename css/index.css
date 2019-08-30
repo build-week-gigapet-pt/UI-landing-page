@@ -343,7 +343,7 @@ header div nav .current:active {
     flex-direction: row-reverse;
     justify-content: space-evenly;
   }
-  header div h1 {
+  header div .logo {
     margin-top: 20px;
   }
 }
@@ -409,11 +409,8 @@ header {
   height: 300px;
   background-color: #9D0AFF;
   background-image: linear-gradient(#bb28ff, #7f00e1);
-  margin-top: 20px;
   padding: 120px 0;
   text-align: center;
-  /*		border-top: solid 1px (@violet - 30);
-		border-bottom: solid 1px (@violet - 30);*/
 }
 .home #banner h1 {
   font-size: 4rem;
@@ -421,8 +418,6 @@ header {
 @media (max-width: 800px) {
   .home #banner {
     display: block;
-    height: auto;
-    margin: 0;
     padding: 30px 0;
   }
   .home #banner h1 {
@@ -461,10 +456,13 @@ header {
   justify-content: flex-start;
 }
 .home main .row section img {
-  width: 150px;
-  height: 150px;
+  width: 80%;
   margin: 10px auto;
-  border-radius: 5%;
+  border-radius: 15%;
+  border: solid 5px #aed0e1;
+}
+.home main .row section p {
+  text-align: center;
 }
 @media (max-width: 800px) {
   .home main .row {
@@ -485,6 +483,9 @@ header {
     border-radius: 0;
     border-top: solid 1px #aed0e1;
     border-bottom: solid 1px #aed0e1;
+  }
+  .home main .row section img {
+    max-width: 50%;
   }
 }
 .home main #buttons {
@@ -527,6 +528,7 @@ header {
 }
 @media (max-width: 500px) {
   .home main #buttons {
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -643,6 +645,11 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media (min-width: 1012px) {
+  .container.about .member-info .members {
+    flex-wrap: nowrap;
+  }
+}
 @media (max-width: 675px) {
   .container.about .member-info .members {
     display: flex;
@@ -664,6 +671,11 @@ header {
   margin-bottom: 20px;
   text-align: center;
   position: relative;
+}
+@media (min-width: 1012px) {
+  .container.about .member-info .members .member {
+    flex-basis: 24%;
+  }
 }
 @media (max-width: 675px) {
   .container.about .member-info .members .member {
@@ -693,6 +705,7 @@ header {
   background-color: #C268FF;
 }
 .container.about .member-info .members .member a .thumbnails {
+  max-width: 100%;
   margin-top: 10px;
   border-radius: 8px;
   opacity: 1;
